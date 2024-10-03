@@ -119,36 +119,17 @@ Prolog — это логический язык программирования
 
 ## Оценка и интерпретация результатов
 
-Пример запросов к базе знаний в Prolog:
+### Пример запросов к базе знаний в Prolog:
 
-```
-agent_role(X, duelist).
+![img_3.png](png/img_3.png)
 
-health(phoenix, Health).
+### Пример запросов к онтологии:
 
-weapon_price(vandal, Price).
+![img.png](png/img.png)
 
-Найти агентов, которые могут позволить себе способность с ценой менее 200 кредитов:
-can_afford_ability(X, Ability), ability_cost(Ability, Cost), Cost < 200.
+![img_1.png](png/img_1.png)
 
-Найти агентов, которые могут позволить себе способность и оружие дороже 100 кредитов:
-can_afford_ability(X, Ability), ability_cost(Ability, Cost1), Cost1 > 100,
-can_afford_weapon(X, Weapon), weapon_price(Weapon, Price), Price > 100.
-
-```
-
-Пример запросов к онтологии:
-
-```
-Найти всех агентов, у которых здоровье равно 100
-Agent and hasHealthValue value 100
-
-Найти все способности, которые наносят урон 100
-Ability and hasDamageValue value 100
-
-Найти все агенты, которые имеют возможность использовать способность orbital_strike
-Agent and hasUltimateAbility value orbital_strike
-```
+![img_2.png](png/img_2.png)
 
 Результаты показали, что система отвечает всем базовым требованиям.
 
