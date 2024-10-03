@@ -134,6 +134,18 @@ can_afford_ability(X, Ability), ability_cost(Ability, Cost1), Cost1 > 100,
 can_afford_weapon(X, Weapon), weapon_price(Weapon, Price), Price > 100.
 
 ```
+Пример запросов к онтологии:
+
+```
+Найти всех агентов, у которых здоровье равно 100
+Agent and hasHealthValue value 100
+
+Найти все способности, которые наносят урон 100
+Ability and hasDamageValue value 100
+
+Найти все агенты, которые имеют возможность использовать способность orbital_strike
+Agent and hasUltimateAbility value orbital_strike
+```
 
 Результаты показали, что система отвечает всем базовым требованиям.
 
